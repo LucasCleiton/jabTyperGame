@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JabTyper</title>
+</head>
+    <body>
+
+        <table table border="0" bgcolor="white" align="center" width="400px" class="table" style="border-color: black;">
+            <tbody>
+                <tr>
+                    <td>
+                         <h1>JabTyper</h1>
+
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>
+                        <input type="text" id="nome" placeholder="Nome do Jogador" class = "nes-container with-title">
+
+                        
+                            <p>Selecione seu Icone :</p>
+                        <input type="radio" name="imagem" id="i1" />
+                        <label for="i1"><img src="img/icon1.png" alt=""></label>
+                        
+                        <input  type="radio" name="imagem" id="i2" />
+                        <label  for="i2"><img src="img/icon2.png" alt=""></label>
+                        
+                        <input  type="radio" name="imagem" id="i3" />
+                        <label  for="i3"><img src="img/icon3.png" alt=""></label>
+
+
+                        <br><br>
+
+                         
+
+                        <br><div class="nes-container is-rounded is-dark">
+                        <br><p class="frase">FRASES PARA SER DIGITADAS :</p><br>
+                        <p id="palavrasjogo"><p>
+                        </div>
+
+
+
+                        <ul class="informacoes">
+                             <li><span id="tamanho-frase"></span> Palavras</li>
+                             <li><span id="tempo">15</span> segundos</li>
+                           
+                             <div id="myProgress">
+                                <div class="nes-progress is-pattern" id="myBar"></div>
+                              </div>
+                              
+                            
+                         </ul>                      
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                         <button id="botao-reiniciar" class = "nes-btn is-primary">Reset</button><br>
+                        <textarea class = "nes-container with-title" id="campo-digitacao" cols="60" rows="10"></textarea>
+                        
+                       
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                         <ul>
+                            <li><span id="caracteres-digitados">0</span> caracteres digitados</li>
+                            <li><span id="palavras-digitadas">0</span> palavras Digitadas</li>
+                        </ul><br>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div  class = "nes-container with-title">
+                            <span class="title"> Placar</span>
+                            <div class="nes-table-responsive">
+                        <table class="nes-table is-bordered is-dark" id="tabela-resultado" >
+                                <thead>
+                                    <th>Usuário</th>
+                                    <th>N° de Palavras</th>
+                                    <th>Player</th>
+                                </thead>
+                        </table>
+                            </div>
+                     </div>
+
+                    </td>
+                </tr>
+               
+                        
+                
+
+                
+
+                
+
+                
+            </tbody>
+        </table>
+
+            <script src="js/jquery.js"></script>
+            <script src="js/main.js"></script>
+            <link rel="stylesheet" type="text/css" href="style.css" >
+            <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+            
+    
+    </body>
+</html>
